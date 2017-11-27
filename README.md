@@ -2,7 +2,7 @@
 A simple serial library to send and receive data.
 
 ## How to install
-Copy ezserial.h and ezserial.cpp in your project's folder and then just include "ezserial.h".
+Copy ezserial.h and ezserial.cpp yo your project's folder and include "ezserial.h".
 
 ## How to use
 ```
