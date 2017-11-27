@@ -64,20 +64,6 @@ bool EzSerial::IsOpen(void)
    return( handle >=0);
 }
 
-bool EzSerial::Send( unsigned char  * data,int len)
-{
-   if(!IsOpen()) return false;
-   int rlen= write(handle,data,len);
-   return(rlen == len);
-}
-
-bool EzSerial::Send( unsigned char value)
-{
-   if(!IsOpen()) return false;
-   int rlen= write(handle,&value,1);
-   return(rlen == 1);
-}
-
 bool EzSerial::Send(std::string value)
 {
    if(!IsOpen()) return false;
